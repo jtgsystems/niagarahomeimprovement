@@ -1,8 +1,8 @@
 # 📊 SECURITY REPORT
 
 Project: NIAGARAHOMEIMPROVEMENT
-Date: 3/9/2026, 1:54:27 PM
-Total Issues: 129
+Date: 3/9/2026, 6:26:46 PM
+Total Issues: 101
 
 | Severity | Type | File | Message |
 |----------|------|------|---------|
@@ -106,32 +106,4 @@ Total Issues: 129
 | medium | risky-endpoint | src/components/Icons.tsx:585 | Detected IPv4 Address: 42.07.37.3... |
 | medium | risky-endpoint | src/components/Icons.tsx:605 | Detected IPv4 Address: 18.09.17.4... |
 | medium | risky-endpoint | src/components/Icons.tsx:503 | Detected Private IP Address: 10.34.14.75... |
-| medium | risky-endpoint | _legacy/server.js:20 | Detected Localhost: localhost... |
-| medium | insecure-endpoint | _legacy/server.js:43 | Detected HTTP URL: http://www.niagarahomeimprovement.com... |
-| medium | insecure-endpoint | _legacy/public/js/bootstrap-slider.js:18 | Detected HTTP URL: http://www.apache.org/licenses/LICENSE-2.0... |
-| medium | insecure-endpoint | _legacy/public/js/bootstrap-slider.js:266 | Detected HTTP URL: http://stackoverflow.com/questions/846221/logarith... |
-| medium | insecure-endpoint | _legacy/public/js/bootstrap-slider.js:1431 | Detected HTTP URL: http://stackoverflow.com/questions/10454518/javasc... |
-| medium | insecure-endpoint | _legacy/public/js/modernizr.custom.js:2 | Detected HTTP URL: http://modernizr.com/download/#-cssanimations-shiv... |
-| medium | insecure-endpoint | _legacy/public/js/theme.js:5 | Detected HTTP URL: http://themeforest.net/user/andreysokoltsov... |
-| medium | insecure-endpoint | _legacy/public/css/animate.css:4 | Detected HTTP URL: http://daneden.me/animate... |
-| medium | insecure-endpoint | _legacy/public/css/animate.css:5 | Detected HTTP URL: http://opensource.org/licenses/MIT... |
-| medium | insecure-endpoint | _legacy/public/css/bootstrap-slider.css:18 | Detected HTTP URL: http://www.apache.org/licenses/LICENSE-2.0... |
-| medium | insecure-endpoint | _legacy/public/css/colors.css:9 | Detected HTTP URL: http://themeforest.net/user/andreysokoltsov... |
-| medium | insecure-endpoint | _legacy/public/css/datepicker.css:7 | Detected HTTP URL: http://themeforest.net/user/andreysokoltsov... |
-| medium | insecure-endpoint | _legacy/public/css/master.css:9 | Detected HTTP URL: http://themeforest.net/user/andreysokoltsov... |
-| medium | insecure-endpoint | _legacy/public/css/responsive.css:17 | Detected HTTP URL: http://themeforest.net/user/andreysokoltsov... |
-| medium | insecure-endpoint | _legacy/public/css/theme.css:19 | Detected HTTP URL: http://themeforest.net/user/andreysokoltsov... |
-| medium | insecure-endpoint | _legacy/public/assets/switcher/js/switcher.js:5 | Detected HTTP URL: http://www.kelvinluck.com/... |
-| medium | insecure-endpoint | _legacy/public/assets/contact/jqBootstrapValidation.js:6 | Detected HTTP URL: http://opensource.org/licenses/mit-license.php... |
-| medium | insecure-endpoint | _legacy/public/assets/contact/jqBootstrapValidation.js:8 | Detected HTTP URL: http://ReactiveRaven.github.com/jqBootstrapValidat... |
-| medium | insecure-endpoint | _legacy/public/assets/contact/jqBootstrapValidation.js:882 | Detected HTTP URL: http://stackoverflow.com/questions/359788/how-to-e... |
-| medium | insecure-endpoint | _legacy/public/assets/contact/jqBootstrapValidation.js:883 | Detected HTTP URL: http://tinyurl.com/executeFunctionByName... |
-| medium | insecure-endpoint | _legacy/public/assets/chosen/chosen.css:3 | Detected HTTP URL: http://getharvest.com... |
-| medium | insecure-endpoint | _legacy/public/assets/chosen/chosen.css:7 | Detected HTTP URL: http://getharvest.com... |
-| medium | insecure-endpoint | _legacy/old/assets/switcher/js/switcher.js:5 | Detected HTTP URL: http://www.kelvinluck.com/... |
-| medium | insecure-endpoint | _legacy/old/assets/contact/jqBootstrapValidation.js:6 | Detected HTTP URL: http://opensource.org/licenses/mit-license.php... |
-| medium | insecure-endpoint | _legacy/old/assets/contact/jqBootstrapValidation.js:8 | Detected HTTP URL: http://ReactiveRaven.github.com/jqBootstrapValidat... |
-| medium | insecure-endpoint | _legacy/old/assets/contact/jqBootstrapValidation.js:882 | Detected HTTP URL: http://stackoverflow.com/questions/359788/how-to-e... |
-| medium | insecure-endpoint | _legacy/old/assets/contact/jqBootstrapValidation.js:883 | Detected HTTP URL: http://tinyurl.com/executeFunctionByName... |
-| medium | insecure-endpoint | _legacy/old/assets/chosen/chosen.css:3 | Detected HTTP URL: http://getharvest.com... |
-| medium | insecure-endpoint | _legacy/old/assets/chosen/chosen.css:7 | Detected HTTP URL: http://getharvest.com... |
+| medium | security-insecure-links | src/components/Icons.tsx | Security: 9 HTTP links. |
