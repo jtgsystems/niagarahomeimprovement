@@ -1,53 +1,45 @@
-import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
-import { HeroCards } from "./HeroCards";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const Hero = () => {
   return (
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <div className="text-center lg:text-start space-y-6">
+        <span className="bg-primary/10 text-primary px-3 py-2 rounded-full mb-4 animate-in fade-in slide-in-from-top-4 inline-block font-semibold">
+          TRUSTED SINCE 2018
+        </span>
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              Shadcn
-            </span>{" "}
-            landing page
+            Find Your Next{" "}
+            <span className="inline bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
+              Expert Contractor
+            </span>
           </h1>{" "}
-          for{" "}
-          <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              React
-            </span>{" "}
-            developers
-          </h2>
+          <br className="hidden md:block" />
+          in Niagara
         </main>
 
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Build your React landing page effortlessly with the required sections
-          to your project.
+        <p className="text-xl text-muted-foreground mx-auto lg:mx-0">
+          Niagara region's most comprehensive directory for home renovation, repair, and specialized services.
         </p>
 
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
+        <div className="space-y-4 md:space-y-0 flex flex-col md:flex-row md:space-x-4">
+          <a href="#categories" className={`w-full md:w-1/3 text-md font-bold py-6 rounded-full shadow-lg ${buttonVariants({ variant: "default" })}`}>
+            Explore Categories
+          </a>
 
           <a
-            rel="noreferrer noopener"
-            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-            target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
+            href="https://niagarahomeimprovement.com/signup"
+            className={`w-full md:w-1/3 font-bold py-6 rounded-full ${buttonVariants({
               variant: "outline",
             })}`}
           >
-            Github Repository
-            <GitHubLogoIcon className="ml-2 w-5 h-5" />
+            List Your Business
           </a>
         </div>
       </div>
 
-      {/* Hero cards sections */}
-      <div className="z-10">
-        <HeroCards />
+      {/* Side Image */}
+      <div className="z-10 w-full xl:min-h-[600px] min-h-[400px] bg-[url('/media/backgrounds/home2-bg.webp')] bg-cover bg-center rounded-3xl shadow-2xl border border-muted">
       </div>
 
       {/* Shadow effect */}

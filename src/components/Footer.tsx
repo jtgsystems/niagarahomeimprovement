@@ -1,5 +1,3 @@
-import { LogoIcon } from "./Icons";
-
 export const Footer = () => {
   return (
     <footer id="footer">
@@ -10,141 +8,70 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl flex items-center"
           >
-            <LogoIcon />
-            ShadcnUI/React
+            <img src="/media/logo.webp" alt="Niagara Home Improvement Logo" className="h-10 max-w-full mr-2 object-contain" />
           </a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold text-lg">Quick Links</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#categories"
               className="opacity-60 hover:opacity-100"
             >
-              Github
+              Browse Categories
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="/contractors"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
+              Contractor Directory
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="/jobs"
               className="opacity-60 hover:opacity-100"
             >
-              Dribbble
+              Job Board
             </a>
           </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://niagarahomeimprovement.com/signup"
               className="opacity-60 hover:opacity-100"
             >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
+              Submit Listing
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
+          <h3 className="font-bold text-lg">Company</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Features
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
+              href="#pricing"
               className="opacity-60 hover:opacity-100"
             >
               Pricing
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              FAQ
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Youtube
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Discord
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitch
+              Terms of Service
             </a>
           </div>
         </div>
@@ -152,15 +79,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
+          &copy; {new Date().getFullYear()} Niagara Home Improvement. All Rights Reserved.
         </h3>
       </section>
     </footer>

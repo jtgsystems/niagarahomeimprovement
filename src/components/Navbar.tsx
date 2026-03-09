@@ -12,11 +12,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
 
 interface RouteProps {
   href: string;
@@ -25,20 +23,20 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
-  },
-  {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#categories",
+    label: "Categories",
   },
   {
     href: "#pricing",
     label: "Pricing",
   },
   {
-    href: "#faq",
-    label: "FAQ",
+    href: "/contractors",
+    label: "Contractor Directory",
+  },
+  {
+    href: "/jobs",
+    label: "Job Board",
   },
 ];
 
@@ -47,20 +45,19 @@ export const Navbar = () => {
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-20 px-4 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex"
+              className="ml-2 font-bold text-xl flex items-center"
             >
-              <LogoIcon />
-              ShadcnUI/React
+              <img src="/media/logo.webp" alt="Niagara Home Improvement Logo" className="h-10 max-w-full mr-2 object-contain" />
             </a>
           </NavigationMenuItem>
 
           {/* mobile */}
-          <span className="flex md:hidden">
+          <span className="flex xl:hidden">
             <ModeToggle />
 
             <Sheet
@@ -69,7 +66,7 @@ export const Navbar = () => {
             >
               <SheetTrigger className="px-2">
                 <Menu
-                  className="flex md:hidden h-5 w-5"
+                  className="flex xl:hidden h-5 w-5"
                   onClick={() => setIsOpen(true)}
                 >
                   <span className="sr-only">Menu Icon</span>
@@ -79,7 +76,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    Niagara Home Improvement
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -96,14 +93,12 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-                    target="_blank"
+                    href="https://niagarahomeimprovement.com/signup"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
                     })}`}
                   >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
+                    Submit Listing
                   </a>
                 </nav>
               </SheetContent>
@@ -111,7 +106,7 @@ export const Navbar = () => {
           </span>
 
           {/* desktop */}
-          <nav className="hidden md:flex gap-2">
+          <nav className="hidden xl:flex gap-2">
             {routeList.map((route: RouteProps, i) => (
               <a
                 rel="noreferrer noopener"
@@ -126,15 +121,13 @@ export const Navbar = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex gap-2">
+          <div className="hidden xl:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-              target="_blank"
+              href="https://niagarahomeimprovement.com/signup"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
+              Submit Listing
             </a>
 
             <ModeToggle />
