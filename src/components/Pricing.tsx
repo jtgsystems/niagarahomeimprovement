@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -8,7 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Check } from "lucide-react";
 
 export const Pricing = () => {
   return (
@@ -21,7 +21,8 @@ export const Pricing = () => {
         </span>
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8 max-w-2xl mx-auto">
-        Join the #1 directory for Niagara contractors. We connect you directly with homeowners looking for your exact expertise.
+        Join the #1 directory for Niagara contractors. We connect you directly
+        with homeowners looking for your exact expertise.
       </h3>
       <div className="flex justify-center">
         <Card className="w-full max-w-xl drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-primary">
@@ -38,15 +39,29 @@ export const Pricing = () => {
             </div>
 
             <CardDescription>
-              Everything you need to grow your client base in the Niagara region.
+              Everything you need to grow your client base in the Niagara
+              region.
             </CardDescription>
           </CardHeader>
 
           <CardContent>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <form
+              action="https://www.paypal.com/cgi-bin/webscr"
+              method="post"
+              target="_top"
+            >
               <input type="hidden" name="cmd" value="_s-xclick" />
-              <input type="hidden" name="hosted_button_id" value="RNPAL5K4GTMGE" />
-              <Button type="submit" className="w-full text-lg font-bold py-6 rounded-full shadow-lg">START TODAY</Button>
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="RNPAL5K4GTMGE"
+              />
+              <Button
+                type="submit"
+                className="w-full text-lg font-bold py-6 rounded-full shadow-lg"
+              >
+                START TODAY
+              </Button>
             </form>
           </CardContent>
 
@@ -55,13 +70,25 @@ export const Pricing = () => {
           <CardFooter className="flex">
             <div className="space-y-4 text-lg">
               <span className="flex">
-                <Check className="text-green-500 mt-1 flex-shrink-0" /> <h3 className="ml-2"><strong>Premium Visibility:</strong> Top placement in all your categories.</h3>
+                <Check className="text-green-500 mt-1 flex-shrink-0" />{" "}
+                <h3 className="ml-2">
+                  <strong>Premium Visibility:</strong> Top placement in all your
+                  categories.
+                </h3>
               </span>
               <span className="flex">
-                <Check className="text-green-500 mt-1 flex-shrink-0" /> <h3 className="ml-2"><strong>Verified Badge:</strong> Instant trust with homeowners.</h3>
+                <Check className="text-green-500 mt-1 flex-shrink-0" />{" "}
+                <h3 className="ml-2">
+                  <strong>Verified Badge:</strong> Instant trust with
+                  homeowners.
+                </h3>
               </span>
               <span className="flex">
-                <Check className="text-green-500 mt-1 flex-shrink-0" /> <h3 className="ml-2"><strong>Direct Leads:</strong> Homeowners contact you directly.</h3>
+                <Check className="text-green-500 mt-1 flex-shrink-0" />{" "}
+                <h3 className="ml-2">
+                  <strong>Direct Leads:</strong> Homeowners contact you
+                  directly.
+                </h3>
               </span>
             </div>
           </CardFooter>

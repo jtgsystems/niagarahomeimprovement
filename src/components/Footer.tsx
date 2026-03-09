@@ -10,7 +10,11 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex items-center"
           >
-            <img src="/media/logo.webp" alt="Niagara Home Improvement Logo" className="h-10 max-w-full mr-2 object-contain" />
+            <img
+              src="/media/logo.webp"
+              alt="Niagara Home Improvement Logo"
+              className="h-10 max-w-full mr-2 object-contain"
+            />
           </a>
         </div>
 
@@ -79,7 +83,8 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; {new Date().getFullYear()} Niagara Home Improvement. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Niagara Home Improvement. All Rights
+          Reserved.
         </h3>
       </section>
     </footer>

@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import { useState } from "react";
 import {
   NavigationMenu,
@@ -11,10 +12,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
-import { buttonVariants } from "./ui/button";
-import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
+import { buttonVariants } from "./ui/button";
 
 interface RouteProps {
   href: string;
@@ -52,7 +51,11 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex items-center"
             >
-              <img src="/media/logo.webp" alt="Niagara Home Improvement Logo" className="h-10 max-w-full mr-2 object-contain" />
+              <img
+                src="/media/logo.webp"
+                alt="Niagara Home Improvement Logo"
+                className="h-10 max-w-full mr-2 object-contain"
+              />
             </a>
           </NavigationMenuItem>
 
@@ -60,10 +63,7 @@ export const Navbar = () => {
           <span className="flex xl:hidden">
             <ModeToggle />
 
-            <Sheet
-              open={isOpen}
-              onOpenChange={setIsOpen}
-            >
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger className="px-2">
                 <Menu
                   className="flex xl:hidden h-5 w-5"

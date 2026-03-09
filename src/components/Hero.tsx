@@ -19,19 +19,25 @@ export const Hero = () => {
         </main>
 
         <p className="text-xl text-muted-foreground mx-auto lg:mx-0">
-          Niagara region's most comprehensive directory for home renovation, repair, and specialized services.
+          Niagara region's most comprehensive directory for home renovation,
+          repair, and specialized services.
         </p>
 
         <div className="space-y-4 md:space-y-0 flex flex-col md:flex-row md:space-x-4">
-          <a href="#categories" className={`w-full md:w-1/3 text-md font-bold py-6 rounded-full shadow-lg ${buttonVariants({ variant: "default" })}`}>
+          <a
+            href="#categories"
+            className={`w-full md:w-1/3 text-md font-bold py-6 rounded-full shadow-lg ${buttonVariants({ variant: "default" })}`}
+          >
             Explore Categories
           </a>
 
           <a
             href="https://niagarahomeimprovement.com/signup"
-            className={`w-full md:w-1/3 font-bold py-6 rounded-full ${buttonVariants({
-              variant: "outline",
-            })}`}
+            className={`w-full md:w-1/3 font-bold py-6 rounded-full ${buttonVariants(
+              {
+                variant: "outline",
+              },
+            )}`}
           >
             List Your Business
           </a>
@@ -39,8 +45,7 @@ export const Hero = () => {
       </div>
 
       {/* Side Image */}
-      <div className="z-10 w-full xl:min-h-[600px] min-h-[400px] bg-[url('/media/backgrounds/home2-bg.webp')] bg-cover bg-center rounded-3xl shadow-2xl border border-muted">
-      </div>
+      <div className="z-10 w-full xl:min-h-[600px] min-h-[400px] bg-[url('/media/backgrounds/home2-bg.webp')] bg-cover bg-center rounded-3xl shadow-2xl border border-muted"></div>
 
       {/* Shadow effect */}
       <div className="shadow"></div>
