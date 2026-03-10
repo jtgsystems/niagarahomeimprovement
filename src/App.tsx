@@ -7,6 +7,7 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 import { CategoryPage } from "./components/CategoryPage";
 import { CityPage } from "./components/CityPage";
+import { SignupPage } from "./components/SignupPage";
 import "./App.css";
 
 function HomePage() {
@@ -27,8 +28,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/:slug" element={<CategoryPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/submit-listing" element={<SignupPage />} />
         <Route path="/city/:slug" element={<CityPage />} />
+        <Route path="/:slug" element={<CategoryPage />} />
       </Routes>
     </BrowserRouter>
   );

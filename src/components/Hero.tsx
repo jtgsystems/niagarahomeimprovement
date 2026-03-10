@@ -32,7 +32,7 @@ export const Hero = () => {
           </a>
 
           <a
-            href="https://niagarahomeimprovement.com/signup"
+            href="/signup"
             className={`w-full md:w-1/3 font-bold py-6 rounded-full ${buttonVariants(
               {
                 variant: "outline",

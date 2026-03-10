@@ -283,7 +283,7 @@ export const CityPage = () => {
                 professionals. Join the Niagara Home Improvement directory today.
               </p>
               <a
-                href="https://niagarahomeimprovement.com/signup"
+                href="/signup"
                 className={`w-full ${buttonVariants({ variant: "default", size: "lg" })}`}
               >
                 Get Listed Today

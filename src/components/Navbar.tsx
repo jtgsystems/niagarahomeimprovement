@@ -93,7 +93,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://niagarahomeimprovement.com/signup"
+                    href="/signup"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
                     })}`}
@@ -124,7 +124,7 @@ export const Navbar = () => {
           <div className="hidden xl:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://niagarahomeimprovement.com/signup"
+              href="/signup"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
               Submit Listing
