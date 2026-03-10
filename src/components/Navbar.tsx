@@ -33,10 +33,6 @@ const routeList: RouteProps[] = [
     href: "/contractors",
     label: "Contractor Directory",
   },
-  {
-    href: "/jobs",
-    label: "Job Board",
-  },
 ];
 
 export const Navbar = () => {
