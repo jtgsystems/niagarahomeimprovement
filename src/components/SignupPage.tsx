@@ -36,7 +36,7 @@ export const SignupPage = () => {
 
           <div className="max-w-3xl">
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6">
-              JOIN 200+ NIAGARA CONTRACTORS
+              JOIN NIAGARA'S TOP CONTRACTORS
             </span>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Get Your Business{" "}
@@ -66,7 +66,7 @@ export const SignupPage = () => {
         <div className="container py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { icon: Users, label: "200+ Listed Contractors" },
+              { icon: Users, label: "Growing Contractor Network" },
               { icon: Star, label: "Trusted Since 2018" },
               { icon: TrendingUp, label: "1000+ Monthly Visitors" },
               { icon: Shield, label: "Verified Professionals" },
