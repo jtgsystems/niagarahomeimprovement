@@ -50,6 +50,20 @@ import {
   Sun,
   Umbrella,
   Container,
+  HardDriveDownload,
+  Trash2,
+  Fan,
+  Blend,
+  Sofa,
+  BatteryCharging,
+  Sparkles,
+  Droplet,
+  KeyRound,
+  Palette,
+  LayoutGrid,
+  Accessibility,
+  Anvil,
+  Radiation,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -531,6 +545,132 @@ export const serviceList: ServiceItem[] = [
     seoTitle: "Waterproofing Contractors in Niagara Region",
     seoDescription: "Waterproofing contractors in Niagara. Exterior membranes, drainage systems, window wells, and water management. Get your business listed.",
     longDescription: "Protect your entire property from water intrusion with professional waterproofing services in the Niagara Region. Our directory features contractors who specialize in exterior waterproofing membranes, perimeter drainage systems, window well installation, grading corrections, downspout management, and crawl space encapsulation. Comprehensive water management protects your investment. Waterproofing companies — list your business to reach Niagara homeowners facing water management challenges."
+  },
+  {
+    title: "General Contractor",
+    url: "general-contractor",
+    icon: HardDriveDownload,
+    description: "Full-service general contracting and project management.",
+    seoTitle: "General Contractors in Niagara Region",
+    seoDescription: "Licensed general contractors in Niagara. Full home renovations, additions, project management, and new builds. List your GC business today.",
+    longDescription: "From major renovations to complete new builds, general contractors in the Niagara Region manage every aspect of your construction project. Our directory features licensed GCs who handle full home renovations, room additions, second-storey additions, custom home builds, permit coordination, sub-trade management, and project scheduling. A reliable general contractor saves you time, money, and stress. General contractors — list your business to connect with Niagara homeowners planning their next big project."
+  },
+  {
+    title: "Junk Removal",
+    url: "junk-removal",
+    icon: Trash2,
+    description: "Residential and commercial junk hauling and disposal.",
+    seoTitle: "Junk Removal Services in Niagara Region",
+    seoDescription: "Fast junk removal in Niagara. Furniture, appliances, renovation debris, estate cleanouts, and yard waste hauling. Add your junk removal business.",
+    longDescription: "Clear out clutter quickly with professional junk removal services in the Niagara Region. Our directory features junk hauling companies that handle furniture removal, appliance disposal, renovation debris, estate cleanouts, hoarding cleanup, yard waste, and e-waste recycling. Most companies offer same-day service and donate or recycle whenever possible. Junk removal businesses — list your services to reach Niagara homeowners, landlords, and property managers who need fast, reliable hauling."
+  },
+  {
+    title: "Duct Cleaning",
+    url: "duct-cleaning",
+    icon: Fan,
+    description: "Air duct and dryer vent cleaning services.",
+    seoTitle: "Duct Cleaning Services in Niagara Region",
+    seoDescription: "Professional duct cleaning in Niagara. HVAC duct cleaning, dryer vent cleaning, and indoor air quality improvement. Get your business listed.",
+    longDescription: "Breathe cleaner air with professional duct cleaning services in the Niagara Region. Our directory features NADCA-certified technicians who provide complete HVAC duct cleaning, dryer vent cleaning, furnace cleaning, air handler sanitization, and indoor air quality assessments. Regular duct cleaning reduces allergens, improves airflow efficiency, and lowers energy bills. Niagara's cold winters mean long furnace seasons. Duct cleaning companies — list your business to reach health-conscious Niagara homeowners."
+  },
+  {
+    title: "Stucco",
+    url: "stucco",
+    icon: Blend,
+    description: "Stucco application, repair, and exterior finishing.",
+    seoTitle: "Stucco Contractors in Niagara Region",
+    seoDescription: "Expert stucco contractors in Niagara. New stucco application, repair, EIFS, parging, and exterior finishing. List your stucco business.",
+    longDescription: "Give your home a durable and beautiful exterior with professional stucco services in the Niagara Region. Our directory features experienced stucco contractors who handle new stucco application, stucco repair, EIFS (External Insulation Finishing System), parging, acrylic stucco, colour matching, and heritage stucco restoration. Stucco provides excellent weather resistance and curb appeal. Stucco contractors — list your business to reach Niagara homeowners looking for quality exterior finishes."
+  },
+  {
+    title: "Patio & Sunrooms",
+    url: "patio-sunrooms",
+    icon: Sofa,
+    description: "Patio construction and sunroom additions.",
+    seoTitle: "Patio & Sunroom Contractors in Niagara Region",
+    seoDescription: "Patio and sunroom builders in Niagara. Three-season rooms, four-season sunrooms, screened porches, and patio construction. Add your business.",
+    longDescription: "Extend your living space with professional patio and sunroom services in the Niagara Region. Our directory features contractors who build three-season rooms, four-season sunrooms, screened-in porches, glass enclosures, patio covers, pergolas, and custom outdoor living spaces. Enjoy Niagara's beautiful seasons from the comfort of a well-built sunroom. Patio and sunroom builders — list your business to reach homeowners looking to add usable space and value to their properties."
+  },
+  {
+    title: "EV Charger Installation",
+    url: "ev-charger-installation",
+    icon: BatteryCharging,
+    description: "Electric vehicle charger installation and wiring.",
+    seoTitle: "EV Charger Installation in Niagara Region",
+    seoDescription: "EV charger installers in Niagara. Level 2 home charging, Tesla Wall Connector, panel upgrades, and commercial EV stations. Get listed.",
+    longDescription: "Charge your electric vehicle at home with professional EV charger installation in the Niagara Region. Our directory features licensed electricians who install Level 2 home chargers, Tesla Wall Connectors, ChargePoint units, panel upgrades for EV capacity, and commercial EV charging stations. As EV adoption accelerates across Ontario, reliable home charging is essential. EV charger installers — list your business to reach the growing number of Niagara EV owners."
+  },
+  {
+    title: "Window Cleaning",
+    url: "window-cleaning",
+    icon: Sparkles,
+    description: "Residential and commercial window cleaning.",
+    seoTitle: "Window Cleaning Services in Niagara Region",
+    seoDescription: "Professional window cleaning in Niagara. Interior and exterior windows, screens, tracks, skylights, and high-rise access. List your window cleaning business.",
+    longDescription: "Let the light in with professional window cleaning services in the Niagara Region. Our directory features window cleaning companies that handle interior and exterior residential windows, commercial storefronts, screen cleaning, track and sill detailing, skylight cleaning, and hard water stain removal. Many offer seasonal packages and gutter cleaning add-ons. Window cleaning businesses — list your services to reach Niagara homeowners and businesses who want crystal-clear windows year-round."
+  },
+  {
+    title: "Hot Water Tanks",
+    url: "hot-water-tanks",
+    icon: Droplet,
+    description: "Water heater installation, repair, and replacement.",
+    seoTitle: "Hot Water Tank Services in Niagara Region",
+    seoDescription: "Hot water tank contractors in Niagara. Tank and tankless installation, repair, rental programs, and emergency service. Add your business.",
+    longDescription: "Never run out of hot water with professional water heater services in the Niagara Region. Our directory features licensed contractors who install and repair traditional tank water heaters, tankless on-demand systems, heat pump water heaters, and power-vent units. Rental and purchase options available. Emergency same-day replacement when your tank fails. Hot water tank companies — list your business to reach Niagara homeowners needing reliable hot water solutions."
+  },
+  {
+    title: "Locksmith",
+    url: "locksmith",
+    icon: KeyRound,
+    description: "Lock installation, rekeying, and emergency lockout.",
+    seoTitle: "Locksmith Services in Niagara Region",
+    seoDescription: "24/7 locksmith services in Niagara. Emergency lockouts, lock changes, deadbolt installation, key cutting, and smart locks. Get your business listed.",
+    longDescription: "Secure your home with professional locksmith services in the Niagara Region. Our directory features licensed locksmiths who provide emergency lockout service, lock installation and rekeying, deadbolt upgrades, smart lock installation, key duplication, safe opening, and master key systems. 24/7 emergency service available from many listed professionals. Locksmiths — list your business to reach Niagara homeowners and property managers who need reliable security solutions."
+  },
+  {
+    title: "Home Staging",
+    url: "home-staging",
+    icon: Palette,
+    description: "Professional home staging for real estate sales.",
+    seoTitle: "Home Staging Services in Niagara Region",
+    seoDescription: "Professional home staging in Niagara. Furniture rental, styling, photography prep, and staging consultations for faster sales. List your staging business.",
+    longDescription: "Sell your home faster and for more money with professional home staging services in the Niagara Region. Our directory features staging companies that provide full-home staging with furniture rental, partial staging, vacant property staging, staging consultations, decluttering services, and pre-photography preparation. Staged homes in Niagara sell significantly faster than unstaged properties. Home staging companies — list your business to reach sellers and real estate agents across the Niagara region."
+  },
+  {
+    title: "Cabinet Refinishing",
+    url: "cabinet-refinishing",
+    icon: LayoutGrid,
+    description: "Cabinet painting, refinishing, and refacing.",
+    seoTitle: "Cabinet Refinishing Services in Niagara Region",
+    seoDescription: "Cabinet refinishing in Niagara. Kitchen cabinet painting, refacing, staining, hardware upgrades, and bathroom vanity refinishing. Add your business.",
+    longDescription: "Transform your kitchen without a full renovation through professional cabinet refinishing services in the Niagara Region. Our directory features skilled contractors who provide cabinet painting, spray finishing, wood staining, cabinet refacing with new doors, hardware replacement, and bathroom vanity refinishing. Cabinet refinishing costs a fraction of full replacement while delivering a dramatic transformation. Cabinet refinishing businesses — list your services to reach budget-conscious Niagara homeowners wanting a kitchen refresh."
+  },
+  {
+    title: "Accessibility & Mobility",
+    url: "accessibility-mobility",
+    icon: Accessibility,
+    description: "Home accessibility modifications and mobility aids.",
+    seoTitle: "Accessibility & Mobility Contractors in Niagara",
+    seoDescription: "Accessibility contractors in Niagara. Wheelchair ramps, stairlifts, grab bars, walk-in tubs, and aging-in-place modifications. Get listed.",
+    longDescription: "Make your home safe and accessible for every stage of life with professional accessibility services in the Niagara Region. Our directory features contractors who install wheelchair ramps, stairlifts, platform lifts, grab bars, walk-in bathtubs, roll-in showers, door widening, threshold removal, and complete aging-in-place renovations. With an aging population in Niagara, accessibility modifications are increasingly essential. Accessibility contractors — list your business to reach families making their homes safer for loved ones."
+  },
+  {
+    title: "Welding",
+    url: "welding",
+    icon: Anvil,
+    description: "Residential and commercial welding and fabrication.",
+    seoTitle: "Welding Services in Niagara Region",
+    seoDescription: "Professional welding in Niagara. Custom railings, structural steel, ornamental iron, gate fabrication, and mobile welding. List your welding business.",
+    longDescription: "Get custom metalwork built to last with professional welding services in the Niagara Region. Our directory features certified welders who provide custom railing fabrication, structural steel work, ornamental iron, gate and fence fabrication, fire pit construction, trailer repair, and mobile welding services. MIG, TIG, and stick welding for residential and commercial applications. Welding businesses — list your services to reach Niagara homeowners and contractors needing quality metal fabrication."
+  },
+  {
+    title: "Radon Mitigation",
+    url: "radon-mitigation",
+    icon: Radiation,
+    description: "Radon testing, mitigation, and ventilation systems.",
+    seoTitle: "Radon Mitigation Services in Niagara Region",
+    seoDescription: "Radon mitigation specialists in Niagara. Radon testing, sub-slab depressurization, ventilation systems, and follow-up monitoring. Add your business.",
+    longDescription: "Protect your family from radon gas with professional radon mitigation services in the Niagara Region. Our directory features C-NRPP certified radon professionals who provide radon testing, sub-slab depressurization systems, HRV/ERV ventilation, sump pit sealing, crawl space encapsulation, and ongoing monitoring. Health Canada identifies radon as the #1 cause of lung cancer among non-smokers. Parts of Niagara have elevated radon levels. Radon mitigation companies — list your business to reach health-conscious Niagara homeowners."
   },
 ];
 
