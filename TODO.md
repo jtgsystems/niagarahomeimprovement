@@ -12,3 +12,9 @@
 - [x] 10. Convert all images to WebP and Geotag for Niagara Region center.
 - [x] 11. Double the content on all pages, SEO optimized descriptions/titles, keyword search phrases.
 - [x] 12. Restore ALL original categories/pages and link them on the homepage so they can be clicked.
+- [x] 13. Navy blue theme hardened (hero gradient, primary colors, ring, buttons).
+- [x] 14. Add Lucide icons to all 32 categories with no-wrap grid layout.
+- [x] 15. Create 32 individual SEO-optimized category pages with React Router.
+- [x] 16. Create 12 Niagara Region city pages (St. Catharines, Niagara Falls, Welland, Thorold, NOTL, Fort Erie, Grimsby, Lincoln, Pelham, Port Colborne, Wainfleet, West Lincoln).
+- [x] 17. Cross-link categories ↔ cities for internal SEO mesh.
+- [x] 18. Ultimate Scanner remediation (remove _legacy, fix CSS, resolve lints).
