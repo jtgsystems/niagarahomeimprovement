@@ -14,7 +14,6 @@ import { Link } from "react-router-dom";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 import { ScrollToTop } from "./ScrollToTop";
-import { serviceList } from "./service-data";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
@@ -211,214 +210,45 @@ export const SignupPage = () => {
                     Submit Your Listing
                   </CardTitle>
                   <p className="text-muted-foreground text-sm">
-                    Fill out the form below and we'll get your business listed
-                    within 24 hours.
+                    Fill out our quick application form and we'll get your
+                    business listed within 24 hours.
                   </p>
                 </CardHeader>
-                <CardContent>
-                  <form
-                    action="https://formsubmit.co/niagarahomeimprovement@gmail.com"
-                    method="POST"
-                    className="space-y-5"
+                <CardContent className="space-y-6">
+                  <div className="space-y-4">
+                    {[
+                      "Enter your business details and contact info",
+                      "Select your service category and city",
+                      "We review and publish your listing within 24 hours",
+                      "Start receiving leads from local homeowners",
+                    ].map((step, i) => (
+                      <div key={step} className="flex items-start gap-3">
+                        <div className="w-7 h-7 min-w-[1.75rem] rounded-full bg-primary/10 flex items-center justify-center text-sm font-bold text-primary">
+                          {i + 1}
+                        </div>
+                        <span className="text-sm pt-0.5">{step}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <a
+                    href="https://forms.gle/YOUR_GOOGLE_FORM_ID"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {/* Formsubmit.co configuration */}
-                    <input
-                      type="hidden"
-                      name="_subject"
-                      value="New Contractor Listing Submission — Niagara Home Improvement"
-                    />
-                    <input
-                      type="hidden"
-                      name="_next"
-                      value="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RNPAL5K4GTMGE"
-                    />
-                    <input type="hidden" name="_captcha" value="true" />
-                    <input type="hidden" name="_template" value="table" />
-                    <input
-                      type="text"
-                      name="_honey"
-                      style={{ display: "none" }}
-                    />
-
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div>
-                        <label
-                          htmlFor="business-name"
-                          className="text-sm font-medium mb-1.5 block"
-                        >
-                          Business Name{" "}
-                          <span className="text-destructive">*</span>
-                        </label>
-                        <input
-                          id="business-name"
-                          name="Business Name"
-                          type="text"
-                          required
-                          placeholder="e.g. Smith Renovations"
-                          className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="contact-name"
-                          className="text-sm font-medium mb-1.5 block"
-                        >
-                          Contact Name{" "}
-                          <span className="text-destructive">*</span>
-                        </label>
-                        <input
-                          id="contact-name"
-                          name="Contact Name"
-                          type="text"
-                          required
-                          placeholder="e.g. John Smith"
-                          className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div>
-                        <label
-                          htmlFor="email"
-                          className="text-sm font-medium mb-1.5 block"
-                        >
-                          Email Address{" "}
-                          <span className="text-destructive">*</span>
-                        </label>
-                        <input
-                          id="email"
-                          name="Email"
-                          type="email"
-                          required
-                          placeholder="john@smithrenos.com"
-                          className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="phone"
-                          className="text-sm font-medium mb-1.5 block"
-                        >
-                          Phone Number{" "}
-                          <span className="text-destructive">*</span>
-                        </label>
-                        <input
-                          id="phone"
-                          name="Phone"
-                          type="tel"
-                          required
-                          placeholder="(905) 555-0123"
-                          className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="website"
-                        className="text-sm font-medium mb-1.5 block"
-                      >
-                        Website URL
-                      </label>
-                      <input
-                        id="website"
-                        name="Website"
-                        type="url"
-                        placeholder="https://www.smithrenos.com"
-                        className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
-                      />
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="category"
-                        className="text-sm font-medium mb-1.5 block"
-                      >
-                        Primary Category{" "}
-                        <span className="text-destructive">*</span>
-                      </label>
-                      <select
-                        id="category"
-                        name="Primary Category"
-                        required
-                        className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
-                      >
-                        <option value="">Select your primary service...</option>
-                        {serviceList.map((s) => (
-                          <option key={s.url} value={s.title}>
-                            {s.title}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="city"
-                        className="text-sm font-medium mb-1.5 block"
-                      >
-                        Primary City Served{" "}
-                        <span className="text-destructive">*</span>
-                      </label>
-                      <select
-                        id="city"
-                        name="Primary City"
-                        required
-                        className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
-                      >
-                        <option value="">Select your primary city...</option>
-                        {[
-                          "St. Catharines",
-                          "Niagara Falls",
-                          "Welland",
-                          "Thorold",
-                          "Niagara-on-the-Lake",
-                          "Fort Erie",
-                          "Grimsby",
-                          "Lincoln",
-                          "Pelham",
-                          "Port Colborne",
-                          "Wainfleet",
-                          "West Lincoln",
-                        ].map((city) => (
-                          <option key={city} value={city}>
-                            {city}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="description"
-                        className="text-sm font-medium mb-1.5 block"
-                      >
-                        Business Description
-                      </label>
-                      <textarea
-                        id="description"
-                        name="Business Description"
-                        rows={4}
-                        placeholder="Tell homeowners about your services, experience, and what makes your business special..."
-                        className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
-                      />
-                    </div>
-
                     <Button
-                      type="submit"
                       size="lg"
-                      className="w-full text-lg font-bold py-6 rounded-full shadow-lg"
+                      className="w-full text-lg font-bold py-6 rounded-full shadow-lg mt-2"
                     >
-                      Submit & Subscribe — $56.50/mo
+                      Apply Now — $56.50/mo
                     </Button>
+                  </a>
 
-                    <p className="text-xs text-muted-foreground text-center">
-                      By submitting, you agree to our Terms of Service. Your
-                      listing will be reviewed and published within 24 hours.
-                      Cancel anytime.
-                    </p>
-                  </form>
+                  <p className="text-xs text-muted-foreground text-center">
+                    By submitting, you agree to our Terms of Service. Your
+                    listing will be reviewed and published within 24 hours.
+                    Cancel anytime.
+                  </p>
                 </CardContent>
               </Card>
             </div>
