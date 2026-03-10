@@ -217,13 +217,29 @@ export const SignupPage = () => {
                 </CardHeader>
                 <CardContent>
                   <form
+                    action="https://formsubmit.co/niagarahomeimprovement@gmail.com"
+                    method="POST"
                     className="space-y-5"
-                    onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
-                      e.preventDefault();
-                      window.location.href =
-                        "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RNPAL5K4GTMGE";
-                    }}
                   >
+                    {/* Formsubmit.co configuration */}
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      value="New Contractor Listing Submission — Niagara Home Improvement"
+                    />
+                    <input
+                      type="hidden"
+                      name="_next"
+                      value="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RNPAL5K4GTMGE"
+                    />
+                    <input type="hidden" name="_captcha" value="true" />
+                    <input type="hidden" name="_template" value="table" />
+                    <input
+                      type="text"
+                      name="_honey"
+                      style={{ display: "none" }}
+                    />
+
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
                         <label
@@ -235,6 +251,7 @@ export const SignupPage = () => {
                         </label>
                         <input
                           id="business-name"
+                          name="Business Name"
                           type="text"
                           required
                           placeholder="e.g. Smith Renovations"
@@ -251,6 +268,7 @@ export const SignupPage = () => {
                         </label>
                         <input
                           id="contact-name"
+                          name="Contact Name"
                           type="text"
                           required
                           placeholder="e.g. John Smith"
@@ -270,6 +288,7 @@ export const SignupPage = () => {
                         </label>
                         <input
                           id="email"
+                          name="Email"
                           type="email"
                           required
                           placeholder="john@smithrenos.com"
@@ -286,6 +305,7 @@ export const SignupPage = () => {
                         </label>
                         <input
                           id="phone"
+                          name="Phone"
                           type="tel"
                           required
                           placeholder="(905) 555-0123"
@@ -303,6 +323,7 @@ export const SignupPage = () => {
                       </label>
                       <input
                         id="website"
+                        name="Website"
                         type="url"
                         placeholder="https://www.smithrenos.com"
                         className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
@@ -319,12 +340,13 @@ export const SignupPage = () => {
                       </label>
                       <select
                         id="category"
+                        name="Primary Category"
                         required
                         className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
                       >
                         <option value="">Select your primary service...</option>
                         {serviceList.map((s) => (
-                          <option key={s.url} value={s.url}>
+                          <option key={s.url} value={s.title}>
                             {s.title}
                           </option>
                         ))}
@@ -341,6 +363,7 @@ export const SignupPage = () => {
                       </label>
                       <select
                         id="city"
+                        name="Primary City"
                         required
                         className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
                       >
@@ -375,6 +398,7 @@ export const SignupPage = () => {
                       </label>
                       <textarea
                         id="description"
+                        name="Business Description"
                         rows={4}
                         placeholder="Tell homeowners about your services, experience, and what makes your business special..."
                         className="w-full px-4 py-2.5 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
@@ -419,7 +443,7 @@ export const SignupPage = () => {
             },
             {
               q: "What categories can I list under?",
-              a: "You can list under any of our 32 service categories. Your primary category gets priority placement, and you can appear in additional relevant categories.",
+              a: "You can list under any of our 65 service categories. Your primary category gets priority placement, and you can appear in additional relevant categories.",
             },
             {
               q: "Is there a contract or commitment?",

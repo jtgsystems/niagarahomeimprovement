@@ -1,8 +1,8 @@
 # 📊 IMPROVEMENT REPORT
 
 Project: NIAGARAHOMEIMPROVEMENT
-Date: 3/9/2026, 10:50:12 PM
-Total Issues: 328
+Date: 3/9/2026, 10:57:44 PM
+Total Issues: 329
 
 | Severity | Type | File | Message |
 |----------|------|------|---------|
@@ -231,6 +231,7 @@ Total Issues: 328
 | medium | a11y-missing-lang | src/components/Statistics.tsx | A11y: Missing lang attribute on <html>. |
 | low | heuristic | src/components/Statistics.tsx:1 | Large components are hard to maintain. Split into smaller, focused components. |
 | info | heuristic | src/components/Statistics.tsx:30 | SOTA Master Protocol: AUDIT PARENT HIERARCHY. Check ancestor max-w and overflow before centering. |
+| medium | heuristic | src/components/Statistics.tsx:9 | LLM13: Temperature Abuse. High temperatures (>1.5) can bypass guardrails. Keep temperature ≤1.5 for security-sensitive applications. |
 | medium | seo-missing-canonical | src/components/city-data.ts | SEO: Missing canonical link. |
 | low | seo-missing-jsonld | src/components/city-data.ts | SEO: No JSON-LD structured data. |
 | medium | seo-no-internal-links | src/components/city-data.ts | SEO: No internal links found. |
