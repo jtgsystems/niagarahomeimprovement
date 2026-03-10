@@ -30,6 +30,26 @@ import {
   CloudRain,
   Activity,
   TreePine,
+  Wrench,
+  Waves,
+  Axe,
+  Flame,
+  HardHat,
+  Shovel,
+  Building2,
+  CarFront,
+  GlassWater,
+  PanelTop,
+  CircleDot,
+  SearchCheck,
+  BrickWall,
+  Bug,
+  Infinity,
+  Wind,
+  Snowflake,
+  Sun,
+  Umbrella,
+  Container,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -331,6 +351,186 @@ export const serviceList: ServiceItem[] = [
     seoTitle: "Tree Removal Services in Niagara Region",
     seoDescription: "Professional tree removal in Niagara. Tree cutting, trimming, stump grinding, and emergency storm service. Add your tree service business.",
     longDescription: "Keep your property safe and beautiful with professional tree services in the Niagara Region. Our directory features certified arborists and tree service companies that handle tree removal, pruning, trimming, stump grinding, lot clearing, emergency storm damage cleanup, and tree health assessments. Fully insured with equipment for trees of any size. Tree service companies — list your business to reach Niagara property owners who need expert tree care."
+  },
+  {
+    title: "Appliance Repair",
+    url: "appliance-repair",
+    icon: Wrench,
+    description: "Home appliance repair and maintenance services.",
+    seoTitle: "Appliance Repair Services in Niagara Region",
+    seoDescription: "Expert appliance repair in Niagara. Fridge, dishwasher, washer, dryer, oven, and stove repair by certified technicians. List your repair business.",
+    longDescription: "Keep your home running smoothly with professional appliance repair services in the Niagara Region. Our directory features certified technicians who repair refrigerators, dishwashers, washing machines, dryers, ovens, stoves, microwaves, and range hoods. Same-day and emergency service available from many listed professionals. Whether it's a warranty repair or an older unit, find the right appliance repair technician. Appliance repair businesses — list your services to reach Niagara homeowners needing fast, reliable repairs."
+  },
+  {
+    title: "Basement Waterproofing",
+    url: "basement-waterproofing",
+    icon: Waves,
+    description: "Basement waterproofing and moisture control.",
+    seoTitle: "Basement Waterproofing Contractors in Niagara",
+    seoDescription: "Basement waterproofing specialists in Niagara. Interior and exterior waterproofing, sump pumps, French drains, and crack repair. Get listed.",
+    longDescription: "Protect your home's foundation and basement from water damage with professional waterproofing services in the Niagara Region. Our directory features specialized contractors who provide interior and exterior waterproofing, sump pump installation, French drain systems, foundation crack repair, weeping tile replacement, and moisture barrier installation. Niagara's high water table makes waterproofing essential. Waterproofing contractors — list your business to reach homeowners dealing with wet basements."
+  },
+  {
+    title: "Carpentry",
+    url: "carpentry",
+    icon: Axe,
+    description: "Custom carpentry, framing, and woodworking.",
+    seoTitle: "Carpenters & Carpentry Services in Niagara",
+    seoDescription: "Skilled carpenters in the Niagara Region. Custom cabinetry, framing, trim work, stairs, and furniture building. Add your carpentry business.",
+    longDescription: "From custom cabinetry to structural framing, professional carpenters in the Niagara Region bring craftsmanship to every project. Our directory features skilled carpenters who specialize in trim and crown molding, custom built-ins, staircase construction, door and window framing, furniture building, deck framing, and heritage woodwork restoration. Whether you need rough carpentry or fine finishing, find the right professional here. Carpenters — list your business to connect with Niagara homeowners and builders."
+  },
+  {
+    title: "Chimney Services",
+    url: "chimney-services",
+    icon: Flame,
+    description: "Chimney cleaning, repair, and inspection.",
+    seoTitle: "Chimney Services & Repair in Niagara Region",
+    seoDescription: "Chimney cleaning, inspection, and repair services in Niagara. WETT certified professionals for fireplaces, wood stoves, and flue systems. Get listed.",
+    longDescription: "Maintain your fireplace and chimney safely with professional chimney services in the Niagara Region. Our directory features WETT-certified chimney sweeps and technicians who provide chimney cleaning, annual inspections, flue liner installation, cap and crown repair, tuckpointing, wood stove installation, and fireplace insert service. Regular chimney maintenance prevents house fires and carbon monoxide risks. Chimney service companies — list your business to reach Niagara homeowners with fireplaces and wood stoves."
+  },
+  {
+    title: "Demolition",
+    url: "demolition",
+    icon: HardHat,
+    description: "Residential and commercial demolition services.",
+    seoTitle: "Demolition Contractors in Niagara Region",
+    seoDescription: "Professional demolition services in Niagara. Interior demo, full structure removal, selective demolition, and debris hauling. List your demo business.",
+    longDescription: "Clear the way for your next project with professional demolition services in the Niagara Region. Our directory features licensed demolition contractors who handle interior demolition, full structure teardown, selective demolition, concrete removal, pool removal, garage demolition, and complete site clearing with debris hauling. Proper permits and safety protocols followed on every job. Demolition contractors — add your business to reach Niagara property owners planning renovation and redevelopment projects."
+  },
+  {
+    title: "Excavation",
+    url: "excavation",
+    icon: Shovel,
+    description: "Excavation, grading, and earthwork services.",
+    seoTitle: "Excavation Contractors in Niagara Region",
+    seoDescription: "Professional excavation services in Niagara. Grading, trenching, foundation digging, septic installation, and site prep. Add your excavation business.",
+    longDescription: "Get your site ready with professional excavation services in the Niagara Region. Our directory features experienced excavation contractors who provide site grading, foundation excavation, trenching for utilities, septic tank installation, drainage solutions, land clearing, and backfill services. From small residential projects to large lot preparations, find the right excavator here. Excavation companies — list your business to connect with builders, homeowners, and developers across Niagara."
+  },
+  {
+    title: "Foundation Repair",
+    url: "foundation-repair",
+    icon: Building2,
+    description: "Foundation crack repair and structural support.",
+    seoTitle: "Foundation Repair Contractors in Niagara",
+    seoDescription: "Foundation repair specialists in Niagara Region. Crack repair, underpinning, wall stabilization, and structural assessments. Get your business listed.",
+    longDescription: "Protect your home's structural integrity with professional foundation repair services in the Niagara Region. Our directory features specialized contractors who handle foundation crack repair, wall stabilization, underpinning, bowing wall correction, pier installation, and complete foundation assessments. Niagara's freeze-thaw cycles and clay soils can cause significant foundation issues. Foundation repair companies — list your business to reach homeowners who need expert structural solutions."
+  },
+  {
+    title: "Garage Doors",
+    url: "garage-doors",
+    icon: CarFront,
+    description: "Garage door installation, repair, and openers.",
+    seoTitle: "Garage Door Installation & Repair in Niagara",
+    seoDescription: "Garage door contractors in Niagara. New installations, repairs, opener replacement, and insulated doors. List your garage door business today.",
+    longDescription: "Upgrade your home's curb appeal and functionality with professional garage door services in the Niagara Region. Our directory features contractors who install and repair residential garage doors, automatic openers, insulated doors, steel and wood carriage doors, and commercial overhead doors. Emergency repair service available. Garage door companies — add your business to reach Niagara homeowners needing installation, repair, or replacement services."
+  },
+  {
+    title: "Glass & Mirrors",
+    url: "glass-mirrors",
+    icon: GlassWater,
+    description: "Glass installation, mirrors, and shower enclosures.",
+    seoTitle: "Glass & Mirror Services in Niagara Region",
+    seoDescription: "Glass and mirror contractors in Niagara. Custom mirrors, shower enclosures, glass railings, and window glass replacement. Add your business.",
+    longDescription: "Add elegance and functionality to your home with professional glass and mirror services in the Niagara Region. Our directory features glass specialists who install custom mirrors, frameless shower enclosures, glass railings, tabletops, backsplashes, replacement window glass, and decorative glass features. Custom cutting and templating for perfect fits. Glass companies — list your services to reach Niagara homeowners and builders looking for quality glass work."
+  },
+  {
+    title: "Gutters & Eavestrough",
+    url: "gutters-eavestrough",
+    icon: PanelTop,
+    description: "Gutter installation, cleaning, and repair.",
+    seoTitle: "Gutter & Eavestrough Contractors in Niagara",
+    seoDescription: "Gutter and eavestrough services in Niagara. Seamless installation, cleaning, repair, leaf guards, and downspout extensions. Get listed today.",
+    longDescription: "Protect your home from water damage with professional gutter and eavestrough services in the Niagara Region. Our directory features contractors who install seamless aluminum gutters, copper gutters, gutter guards and leaf protection systems, downspout extensions, and provide seasonal gutter cleaning and repair. Proper drainage prevents foundation damage, fascia rot, and landscape erosion. Gutter companies — list your business to reach Niagara homeowners needing gutter services."
+  },
+  {
+    title: "Handyman Services",
+    url: "handyman-services",
+    icon: CircleDot,
+    description: "General repairs and household maintenance.",
+    seoTitle: "Handyman Services in Niagara Region",
+    seoDescription: "Reliable handyman services in Niagara. General repairs, furniture assembly, drywall patches, fixture installation, and honey-do lists. Add your business.",
+    longDescription: "Get those household projects done right with professional handyman services in the Niagara Region. Our directory features skilled handymen who handle general repairs, furniture assembly, drywall patching, fixture and hardware installation, door adjustments, weatherstripping, caulking, minor plumbing and electrical, and all types of home maintenance tasks. No job too small. Handyman businesses — list your services to reach Niagara homeowners with ongoing maintenance needs."
+  },
+  {
+    title: "Home Inspection",
+    url: "home-inspection",
+    icon: SearchCheck,
+    description: "Pre-purchase and maintenance home inspections.",
+    seoTitle: "Home Inspectors in Niagara Region",
+    seoDescription: "Certified home inspectors in Niagara. Pre-purchase, pre-listing, maintenance inspections, and radon testing. List your inspection business.",
+    longDescription: "Make informed property decisions with professional home inspection services in the Niagara Region. Our directory features certified home inspectors who provide pre-purchase inspections, pre-listing seller inspections, maintenance inspections, new construction inspections, radon testing, mold assessments, and detailed reporting with photos. Inspectors follow OAHI and InterNACHI standards. Home inspectors — list your business to reach buyers, sellers, and property owners across Niagara."
+  },
+  {
+    title: "Masonry & Brickwork",
+    url: "masonry-brickwork",
+    icon: BrickWall,
+    description: "Brick, stone, and masonry construction and repair.",
+    seoTitle: "Masonry & Brick Contractors in Niagara Region",
+    seoDescription: "Expert masonry contractors in Niagara. Brick repair, stone veneer, tuckpointing, retaining walls, and chimney rebuild. Add your masonry business.",
+    longDescription: "Build lasting structures with professional masonry services in the Niagara Region. Our directory features skilled masons who specialize in bricklaying, stone veneer installation, tuckpointing and repointing, retaining wall construction, chimney rebuilds, concrete block work, natural stone patios, and heritage masonry restoration. Quality masonry adds value and beauty to any property. Masonry contractors — list your business to reach Niagara homeowners and builders."
+  },
+  {
+    title: "Pest Control",
+    url: "pest-control",
+    icon: Bug,
+    description: "Pest and wildlife removal and prevention.",
+    seoTitle: "Pest Control Services in Niagara Region",
+    seoDescription: "Professional pest control in Niagara. Ants, mice, raccoons, wasps, bed bugs, termites, and wildlife removal. Get your pest control business listed.",
+    longDescription: "Keep your home pest-free with professional pest control services in the Niagara Region. Our directory features licensed pest control companies that handle ant infestations, mouse and rat removal, raccoon and wildlife exclusion, wasp nest removal, bed bug treatment, termite inspection, carpenter ant control, and ongoing preventive pest management programs. Humane wildlife removal options available. Pest control companies — list your services to reach Niagara homeowners dealing with pest problems."
+  },
+  {
+    title: "Pool & Spa",
+    url: "pool-spa",
+    icon: Infinity,
+    description: "Pool and hot tub installation and maintenance.",
+    seoTitle: "Pool & Spa Contractors in Niagara Region",
+    seoDescription: "Pool and spa contractors in Niagara. Inground pools, hot tub installation, pool maintenance, and seasonal opening/closing. List your pool business.",
+    longDescription: "Create your backyard oasis with professional pool and spa services in the Niagara Region. Our directory features contractors who build inground pools, install above-ground pools, handle hot tub and spa installation, provide weekly pool maintenance, seasonal opening and closing, liner replacement, equipment repair, and pool deck construction. Pool companies — add your business to reach Niagara homeowners looking to add or maintain pools and spas."
+  },
+  {
+    title: "Pressure Washing",
+    url: "pressure-washing",
+    icon: Wind,
+    description: "Power washing for driveways, decks, and siding.",
+    seoTitle: "Pressure Washing Services in Niagara Region",
+    seoDescription: "Professional pressure washing in Niagara. Driveway cleaning, deck washing, siding restoration, and commercial power washing. Add your business.",
+    longDescription: "Restore your property's appearance with professional pressure washing services in the Niagara Region. Our directory features power washing companies that clean driveways, sidewalks, decks, patios, vinyl siding, brick, fences, and commercial properties. Soft wash options available for delicate surfaces. Regular pressure washing prevents mold, mildew, and algae buildup. Pressure washing companies — list your business to reach Niagara homeowners and property managers who want clean, maintained exteriors."
+  },
+  {
+    title: "Septic Services",
+    url: "septic-services",
+    icon: Container,
+    description: "Septic tank pumping, installation, and repair.",
+    seoTitle: "Septic Services in Niagara Region",
+    seoDescription: "Septic tank services in Niagara. Pumping, installation, inspection, repair, and maintenance for residential and rural properties. Get listed.",
+    longDescription: "Maintain your septic system properly with professional septic services in the Niagara Region. Our directory features licensed septic contractors who provide tank pumping, new septic system installation, repairs, inspections for real estate transactions, drain field maintenance, and emergency septic service. Essential for rural properties throughout Niagara. Septic companies — list your business to reach property owners who rely on septic systems across the region."
+  },
+  {
+    title: "Snow Removal",
+    url: "snow-removal",
+    icon: Snowflake,
+    description: "Residential and commercial snow clearing services.",
+    seoTitle: "Snow Removal Services in Niagara Region",
+    seoDescription: "Reliable snow removal in Niagara. Driveway plowing, salting, sidewalk clearing, and seasonal contracts. List your snow removal business.",
+    longDescription: "Stay safe and accessible through Niagara's harsh winters with professional snow removal services. Our directory features snow removal companies that provide driveway plowing, parking lot clearing, sidewalk shoveling, salting and sanding, roof snow removal, and emergency storm response. Seasonal contracts and per-visit options available. Niagara's lake-effect snow makes reliable snow removal essential. Snow removal companies — list your business to reach homeowners and businesses needing winter maintenance."
+  },
+  {
+    title: "Solar Energy",
+    url: "solar-energy",
+    icon: Sun,
+    description: "Solar panel installation and energy systems.",
+    seoTitle: "Solar Energy Installers in Niagara Region",
+    seoDescription: "Solar panel installation in Niagara. Residential solar systems, battery storage, grid-tie systems, and energy assessments. Add your solar business.",
+    longDescription: "Harness clean energy with professional solar installation services in the Niagara Region. Our directory features certified solar installers who design and install residential solar panel systems, battery storage solutions, grid-tie inverters, EV solar charging, and off-grid systems. Many installers help with Ontario micro-FIT and net metering applications. Solar companies — list your business to reach environmentally conscious Niagara homeowners looking to reduce energy costs and their carbon footprint."
+  },
+  {
+    title: "Waterproofing",
+    url: "waterproofing",
+    icon: Umbrella,
+    description: "Exterior waterproofing and drainage solutions.",
+    seoTitle: "Waterproofing Contractors in Niagara Region",
+    seoDescription: "Waterproofing contractors in Niagara. Exterior membranes, drainage systems, window wells, and water management. Get your business listed.",
+    longDescription: "Protect your entire property from water intrusion with professional waterproofing services in the Niagara Region. Our directory features contractors who specialize in exterior waterproofing membranes, perimeter drainage systems, window well installation, grading corrections, downspout management, and crawl space encapsulation. Comprehensive water management protects your investment. Waterproofing companies — list your business to reach Niagara homeowners facing water management challenges."
   },
 ];
 
