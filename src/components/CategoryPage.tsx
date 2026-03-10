@@ -1,10 +1,10 @@
-import { useParams, Link } from "react-router-dom";
-import { serviceList } from "./Services";
-import { Navbar } from "./Navbar";
+import { ArrowLeft, CheckCircle, MapPin, Phone } from "lucide-react";
+import { Link, useParams } from "react-router-dom";
 import { Footer } from "./Footer";
+import { Navbar } from "./Navbar";
 import { ScrollToTop } from "./ScrollToTop";
+import { serviceList } from "./service-data";
 import { buttonVariants } from "./ui/button";
-import { ArrowLeft, MapPin, CheckCircle, Phone } from "lucide-react";
 
 export const CategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -19,10 +19,7 @@ export const CategoryPage = () => {
           <p className="text-muted-foreground mb-8">
             The category you are looking for does not exist.
           </p>
-          <Link
-            to="/"
-            className={buttonVariants({ variant: "default" })}
-          >
+          <Link to="/" className={buttonVariants({ variant: "default" })}>
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
           </Link>
@@ -103,9 +100,7 @@ export const CategoryPage = () => {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold mb-4">
-                Areas We Serve
-              </h2>
+              <h2 className="text-2xl font-bold mb-4">Areas We Serve</h2>
               <div className="flex flex-wrap gap-2">
                 {[
                   "St. Catharines",

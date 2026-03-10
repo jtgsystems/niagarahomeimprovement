@@ -1,12 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { CategoryPage } from "./components/CategoryPage";
+import { CityPage } from "./components/CityPage";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Pricing } from "./components/Pricing";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
-import { CategoryPage } from "./components/CategoryPage";
-import { CityPage } from "./components/CityPage";
 import { SignupPage } from "./components/SignupPage";
 import "./App.css";
 

@@ -1,22 +1,22 @@
-import { Navbar } from "./Navbar";
-import { Footer } from "./Footer";
-import { ScrollToTop } from "./ScrollToTop";
-import { Link } from "react-router-dom";
-import { Button } from "./ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import {
   ArrowLeft,
-  CheckCircle,
-  Star,
-  Users,
-  TrendingUp,
-  Shield,
   BarChart3,
-  Phone,
+  CheckCircle,
   Globe,
   MapPin,
+  Phone,
+  Shield,
+  Star,
+  TrendingUp,
+  Users,
 } from "lucide-react";
-import { serviceList } from "./Services";
+import { Link } from "react-router-dom";
+import { Footer } from "./Footer";
+import { Navbar } from "./Navbar";
+import { ScrollToTop } from "./ScrollToTop";
+import { serviceList } from "./service-data";
+import { Button } from "./ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 export const SignupPage = () => {
   return (
@@ -51,7 +51,10 @@ export const SignupPage = () => {
               your services.
             </p>
             <a href="#signup-form">
-              <Button size="lg" className="text-lg px-8 py-6 rounded-full shadow-lg font-bold">
+              <Button
+                size="lg"
+                className="text-lg px-8 py-6 rounded-full shadow-lg font-bold"
+              >
                 Get Started Now
               </Button>
             </a>
@@ -69,7 +72,10 @@ export const SignupPage = () => {
               { icon: TrendingUp, label: "1000+ Monthly Visitors" },
               { icon: Shield, label: "Verified Professionals" },
             ].map(({ icon: Icon, label }) => (
-              <div key={label} className="flex items-center gap-3 justify-center">
+              <div
+                key={label}
+                className="flex items-center gap-3 justify-center"
+              >
                 <Icon className="w-5 h-5 text-primary" />
                 <span className="text-sm font-medium">{label}</span>
               </div>
@@ -126,7 +132,10 @@ export const SignupPage = () => {
               desc: "Get priority positioning in your category. Be the first contractor homeowners see when searching.",
             },
           ].map(({ icon: Icon, title, desc }) => (
-            <Card key={title} className="border-border/50 hover:border-primary/30 transition-all hover:shadow-md">
+            <Card
+              key={title}
+              className="border-border/50 hover:border-primary/30 transition-all hover:shadow-md"
+            >
               <CardHeader>
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
                   <Icon className="w-6 h-6 text-primary" />
@@ -134,7 +143,9 @@ export const SignupPage = () => {
                 <CardTitle className="text-lg">{title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {desc}
+                </p>
               </CardContent>
             </Card>
           ))}
@@ -165,7 +176,10 @@ export const SignupPage = () => {
                   </div>
                   <div className="pt-2">
                     <span className="text-5xl font-bold">$56.50</span>
-                    <span className="text-muted-foreground text-lg"> /month</span>
+                    <span className="text-muted-foreground text-lg">
+                      {" "}
+                      /month
+                    </span>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -193,7 +207,9 @@ export const SignupPage = () => {
             <div>
               <Card className="shadow-xl border-border/50">
                 <CardHeader>
-                  <CardTitle className="text-2xl">Submit Your Listing</CardTitle>
+                  <CardTitle className="text-2xl">
+                    Submit Your Listing
+                  </CardTitle>
                   <p className="text-muted-foreground text-sm">
                     Fill out the form below and we'll get your business listed
                     within 24 hours.
@@ -204,13 +220,18 @@ export const SignupPage = () => {
                     className="space-y-5"
                     onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
                       e.preventDefault();
-                      window.location.href = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RNPAL5K4GTMGE";
+                      window.location.href =
+                        "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RNPAL5K4GTMGE";
                     }}
                   >
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="business-name" className="text-sm font-medium mb-1.5 block">
-                          Business Name <span className="text-destructive">*</span>
+                        <label
+                          htmlFor="business-name"
+                          className="text-sm font-medium mb-1.5 block"
+                        >
+                          Business Name{" "}
+                          <span className="text-destructive">*</span>
                         </label>
                         <input
                           id="business-name"
@@ -221,8 +242,12 @@ export const SignupPage = () => {
                         />
                       </div>
                       <div>
-                        <label htmlFor="contact-name" className="text-sm font-medium mb-1.5 block">
-                          Contact Name <span className="text-destructive">*</span>
+                        <label
+                          htmlFor="contact-name"
+                          className="text-sm font-medium mb-1.5 block"
+                        >
+                          Contact Name{" "}
+                          <span className="text-destructive">*</span>
                         </label>
                         <input
                           id="contact-name"
@@ -236,8 +261,12 @@ export const SignupPage = () => {
 
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="email" className="text-sm font-medium mb-1.5 block">
-                          Email Address <span className="text-destructive">*</span>
+                        <label
+                          htmlFor="email"
+                          className="text-sm font-medium mb-1.5 block"
+                        >
+                          Email Address{" "}
+                          <span className="text-destructive">*</span>
                         </label>
                         <input
                           id="email"
@@ -248,8 +277,12 @@ export const SignupPage = () => {
                         />
                       </div>
                       <div>
-                        <label htmlFor="phone" className="text-sm font-medium mb-1.5 block">
-                          Phone Number <span className="text-destructive">*</span>
+                        <label
+                          htmlFor="phone"
+                          className="text-sm font-medium mb-1.5 block"
+                        >
+                          Phone Number{" "}
+                          <span className="text-destructive">*</span>
                         </label>
                         <input
                           id="phone"
@@ -262,7 +295,10 @@ export const SignupPage = () => {
                     </div>
 
                     <div>
-                      <label htmlFor="website" className="text-sm font-medium mb-1.5 block">
+                      <label
+                        htmlFor="website"
+                        className="text-sm font-medium mb-1.5 block"
+                      >
                         Website URL
                       </label>
                       <input
@@ -274,8 +310,12 @@ export const SignupPage = () => {
                     </div>
 
                     <div>
-                      <label htmlFor="category" className="text-sm font-medium mb-1.5 block">
-                        Primary Category <span className="text-destructive">*</span>
+                      <label
+                        htmlFor="category"
+                        className="text-sm font-medium mb-1.5 block"
+                      >
+                        Primary Category{" "}
+                        <span className="text-destructive">*</span>
                       </label>
                       <select
                         id="category"
@@ -292,8 +332,12 @@ export const SignupPage = () => {
                     </div>
 
                     <div>
-                      <label htmlFor="city" className="text-sm font-medium mb-1.5 block">
-                        Primary City Served <span className="text-destructive">*</span>
+                      <label
+                        htmlFor="city"
+                        className="text-sm font-medium mb-1.5 block"
+                      >
+                        Primary City Served{" "}
+                        <span className="text-destructive">*</span>
                       </label>
                       <select
                         id="city"
@@ -302,17 +346,31 @@ export const SignupPage = () => {
                       >
                         <option value="">Select your primary city...</option>
                         {[
-                          "St. Catharines", "Niagara Falls", "Welland", "Thorold",
-                          "Niagara-on-the-Lake", "Fort Erie", "Grimsby", "Lincoln",
-                          "Pelham", "Port Colborne", "Wainfleet", "West Lincoln",
+                          "St. Catharines",
+                          "Niagara Falls",
+                          "Welland",
+                          "Thorold",
+                          "Niagara-on-the-Lake",
+                          "Fort Erie",
+                          "Grimsby",
+                          "Lincoln",
+                          "Pelham",
+                          "Port Colborne",
+                          "Wainfleet",
+                          "West Lincoln",
                         ].map((city) => (
-                          <option key={city} value={city}>{city}</option>
+                          <option key={city} value={city}>
+                            {city}
+                          </option>
                         ))}
                       </select>
                     </div>
 
                     <div>
-                      <label htmlFor="description" className="text-sm font-medium mb-1.5 block">
+                      <label
+                        htmlFor="description"
+                        className="text-sm font-medium mb-1.5 block"
+                      >
                         Business Description
                       </label>
                       <textarea
@@ -332,8 +390,9 @@ export const SignupPage = () => {
                     </Button>
 
                     <p className="text-xs text-muted-foreground text-center">
-                      By submitting, you agree to our Terms of Service. Your listing will be
-                      reviewed and published within 24 hours. Cancel anytime.
+                      By submitting, you agree to our Terms of Service. Your
+                      listing will be reviewed and published within 24 hours.
+                      Cancel anytime.
                     </p>
                   </form>
                 </CardContent>
@@ -377,7 +436,9 @@ export const SignupPage = () => {
           ].map(({ q, a }) => (
             <div key={q} className="border rounded-xl p-6 bg-card">
               <h3 className="font-bold text-lg mb-2">{q}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{a}</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {a}
+              </p>
             </div>
           ))}
         </div>

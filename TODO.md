@@ -17,4 +17,5 @@
 - [x] 15. Create 32 individual SEO-optimized category pages with React Router.
 - [x] 16. Create 12 Niagara Region city pages (St. Catharines, Niagara Falls, Welland, Thorold, NOTL, Fort Erie, Grimsby, Lincoln, Pelham, Port Colborne, Wainfleet, West Lincoln).
 - [x] 17. Cross-link categories ↔ cities for internal SEO mesh.
-- [x] 18. Ultimate Scanner remediation (remove _legacy, fix CSS, resolve lints).
+- [x] 18. Ultimate Scanner remediation (remove \_legacy, fix CSS, resolve lints).
+- [x] 19. Investigate and apply requested March 2026 update for desktop NIAGARAHOMEIMPROVEMENT project.
