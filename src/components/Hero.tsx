@@ -4,10 +4,10 @@ export const Hero = () => {
   return (
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <div className="text-center lg:text-start space-y-6">
-        <span className="bg-primary/10 text-primary px-3 py-2 rounded-full mb-4 animate-in fade-in slide-in-from-top-4 inline-block font-semibold">
+        <span className="inline-block rounded-full border border-primary/20 bg-white px-3 py-2 font-semibold text-primary shadow-sm animate-in fade-in slide-in-from-top-4 dark:bg-slate-950 dark:text-primary-foreground">
           TRUSTED SINCE 2018
         </span>
-        <main className="text-5xl md:text-6xl font-bold">
+        <div className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
             Find Your Next{" "}
             <span className="inline bg-gradient-to-r from-[#60A5FA] to-[#1E3A8A] text-transparent bg-clip-text">
@@ -16,7 +16,7 @@ export const Hero = () => {
           </h1>{" "}
           <br className="hidden md:block" />
           in Niagara
-        </main>
+        </div>
 
         <p className="text-xl text-muted-foreground mx-auto lg:mx-0">
           Niagara region's most comprehensive directory for home renovation,
@@ -26,7 +26,7 @@ export const Hero = () => {
         <div className="space-y-4 md:space-y-0 flex flex-col md:flex-row md:space-x-4">
           <a
             href="#categories"
-            className={`w-full md:w-1/3 text-md font-bold py-6 rounded-full shadow-lg ${buttonVariants({ variant: "default" })}`}
+            className={`w-full md:w-1/3 text-md font-bold py-6 rounded-full shadow-lg text-white ${buttonVariants({ variant: "default" })}`}
           >
             Explore Categories
           </a>

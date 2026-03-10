@@ -1,22 +1,11 @@
 # 📊 ERROR REPORT
 
 Project: NIAGARAHOMEIMPROVEMENT
-Date: 3/9/2026, 10:57:44 PM
+Date: 3/9/2026, 11:09:37 PM
 Total Issues: 51
 
 | Severity | Type | File | Message |
 |----------|------|------|---------|
-| high | image-privacy-gps | public/media/200x150/partner1.webp | Image contains GPS location data. |
-| high | image-privacy-gps | public/media/200x150/partner2.webp | Image contains GPS location data. |
-| high | image-privacy-gps | public/media/200x150/partner3.webp | Image contains GPS location data. |
-| high | image-privacy-gps | public/media/200x150/partner4.webp | Image contains GPS location data. |
-| high | image-privacy-gps | public/media/200x150/partner5.webp | Image contains GPS location data. |
-| high | image-privacy-gps | public/media/backgrounds/30.webp | Image contains GPS location data. |
-| high | image-privacy-gps | public/media/backgrounds/container-bg.webp | Image contains GPS location data. |
-| high | image-privacy-gps | public/media/backgrounds/home2-bg.webp | Image contains GPS location data. |
-| high | image-privacy-gps | public/media/backgrounds/we-help.webp | Image contains GPS location data. |
-| high | image-privacy-gps | public/media/footer/01.webp | Image contains GPS location data. |
-| high | image-privacy-gps | public/media/logo.webp | Image contains GPS location data. |
 | high | heuristic | TODO.md:13 | Detected intent for broad codebase search. Use 'grepai' for semantic retrieval to achieve 97% reduction in input tokens. |
 | high | seo-missing-title | postcss.config.js | SEO: Missing <title> tag. |
 | high | seo-missing-viewport | postcss.config.js | SEO: Missing viewport meta tag. |
@@ -57,3 +46,14 @@ Total Issues: 51
 | high | seo-missing-viewport | public/media/backgrounds/iphone-bg.html | SEO: Missing viewport meta tag. |
 | high | seo-missing-viewport | public/media/backgrounds/listing-details-mainimg.html | SEO: Missing viewport meta tag. |
 | high | seo-missing-viewport | public/media/backgrounds/pm-bg.html | SEO: Missing viewport meta tag. |
+| high | image-privacy-gps | public/media/200x150/partner1.webp | Image contains GPS location data. |
+| high | image-privacy-gps | public/media/200x150/partner2.webp | Image contains GPS location data. |
+| high | image-privacy-gps | public/media/200x150/partner3.webp | Image contains GPS location data. |
+| high | image-privacy-gps | public/media/200x150/partner4.webp | Image contains GPS location data. |
+| high | image-privacy-gps | public/media/200x150/partner5.webp | Image contains GPS location data. |
+| high | image-privacy-gps | public/media/backgrounds/30.webp | Image contains GPS location data. |
+| high | image-privacy-gps | public/media/backgrounds/container-bg.webp | Image contains GPS location data. |
+| high | image-privacy-gps | public/media/backgrounds/home2-bg.webp | Image contains GPS location data. |
+| high | image-privacy-gps | public/media/backgrounds/we-help.webp | Image contains GPS location data. |
+| high | image-privacy-gps | public/media/footer/01.webp | Image contains GPS location data. |
+| high | image-privacy-gps | public/media/logo.webp | Image contains GPS location data. |

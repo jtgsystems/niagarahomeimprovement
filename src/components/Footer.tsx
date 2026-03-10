@@ -24,7 +24,7 @@ export const Footer = () => {
             <a
               rel="noreferrer noopener"
               href="#categories"
-              className="opacity-60 hover:opacity-100"
+              className="inline-flex min-h-11 items-center py-2 opacity-70 transition-opacity hover:opacity-100"
             >
               Browse Categories
             </a>
@@ -33,7 +33,7 @@ export const Footer = () => {
             <a
               rel="noreferrer noopener"
               href="/contractors"
-              className="opacity-60 hover:opacity-100"
+              className="inline-flex min-h-11 items-center py-2 opacity-70 transition-opacity hover:opacity-100"
             >
               Contractor Directory
             </a>
@@ -42,7 +42,7 @@ export const Footer = () => {
             <a
               rel="noreferrer noopener"
               href="/signup"
-              className="opacity-60 hover:opacity-100"
+              className="inline-flex min-h-11 items-center py-2 opacity-70 transition-opacity hover:opacity-100"
             >
               Submit Listing
             </a>
@@ -55,7 +55,7 @@ export const Footer = () => {
             <a
               rel="noreferrer noopener"
               href="#pricing"
-              className="opacity-60 hover:opacity-100"
+              className="inline-flex min-h-11 items-center py-2 opacity-70 transition-opacity hover:opacity-100"
             >
               Pricing
             </a>
@@ -64,7 +64,7 @@ export const Footer = () => {
             <a
               rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="inline-flex min-h-11 items-center py-2 opacity-70 transition-opacity hover:opacity-100"
             >
               Terms of Service
             </a>

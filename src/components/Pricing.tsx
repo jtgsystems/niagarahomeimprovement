@@ -58,7 +58,7 @@ export const Pricing = () => {
               />
               <Button
                 type="submit"
-                className="w-full text-lg font-bold py-6 rounded-full shadow-lg"
+                className="w-full rounded-full py-6 text-lg font-bold text-white shadow-lg"
               >
                 START TODAY
               </Button>

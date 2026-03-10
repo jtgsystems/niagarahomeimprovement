@@ -1,11 +1,6 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
-import {
   Sheet,
   SheetContent,
   SheetHeader,
@@ -38,14 +33,14 @@ const routeList: RouteProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
-      <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-20 px-4 w-screen flex justify-between ">
-          <NavigationMenuItem className="font-bold flex">
+    <header className="sticky top-0 z-40 w-full border-b-[1px] bg-white dark:border-b-slate-700 dark:bg-background">
+      <div className="container flex min-h-20 items-center justify-between px-4">
+        <div className="font-bold flex">
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex items-center"
+              className="ml-2 flex min-h-11 items-center font-bold text-xl"
+              aria-label="Niagara Home Improvement home"
             >
               <img
                 src="/media/logo.webp"
@@ -53,20 +48,18 @@ export const Navbar = () => {
                 className="h-10 max-w-full mr-2 object-contain"
               />
             </a>
-          </NavigationMenuItem>
+          </div>
 
           {/* mobile */}
-          <span className="flex xl:hidden">
+          <div className="flex xl:hidden items-center gap-1">
             <ModeToggle />
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger className="px-2">
-                <Menu
-                  className="flex xl:hidden h-5 w-5"
-                  onClick={() => setIsOpen(true)}
-                >
-                  <span className="sr-only">Menu Icon</span>
-                </Menu>
+              <SheetTrigger
+                className="inline-flex h-11 w-11 items-center justify-center rounded-md border border-input bg-background"
+                aria-label="Open navigation menu"
+              >
+                <Menu className="h-5 w-5" />
               </SheetTrigger>
 
               <SheetContent side={"left"}>
@@ -82,7 +75,10 @@ export const Navbar = () => {
                       key={label}
                       href={href}
                       onClick={() => setIsOpen(false)}
-                      className={buttonVariants({ variant: "ghost" })}
+                      className={buttonVariants({
+                        variant: "ghost",
+                        size: "lg",
+                      })}
                     >
                       {label}
                     </a>
@@ -90,8 +86,9 @@ export const Navbar = () => {
                   <a
                     rel="noreferrer noopener"
                     href="/signup"
-                    className={`w-[110px] border ${buttonVariants({
+                    className={`min-h-11 w-[140px] border ${buttonVariants({
                       variant: "secondary",
+                      size: "lg",
                     })}`}
                   >
                     Submit Listing
@@ -99,17 +96,21 @@ export const Navbar = () => {
                 </nav>
               </SheetContent>
             </Sheet>
-          </span>
+          </div>
 
           {/* desktop */}
-          <nav className="hidden xl:flex gap-2">
-            {routeList.map((route: RouteProps, i) => (
+          <nav
+            className="hidden xl:flex items-center gap-2"
+            aria-label="Primary navigation"
+          >
+            {routeList.map((route: RouteProps) => (
               <a
                 rel="noreferrer noopener"
                 href={route.href}
-                key={i}
-                className={`text-[17px] ${buttonVariants({
+                key={route.label}
+                className={`min-h-11 text-[17px] ${buttonVariants({
                   variant: "ghost",
+                  size: "lg",
                 })}`}
               >
                 {route.label}
@@ -121,15 +122,14 @@ export const Navbar = () => {
             <a
               rel="noreferrer noopener"
               href="/signup"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
+              className={`min-h-11 border ${buttonVariants({ variant: "secondary", size: "lg" })}`}
             >
               Submit Listing
             </a>
 
             <ModeToggle />
           </div>
-        </NavigationMenuList>
-      </NavigationMenu>
+      </div>
     </header>
   );
 };

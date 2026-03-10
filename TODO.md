@@ -19,3 +19,4 @@
 - [x] 17. Cross-link categories ↔ cities for internal SEO mesh.
 - [x] 18. Ultimate Scanner remediation (remove \_legacy, fix CSS, resolve lints).
 - [x] 19. Investigate and apply requested March 2026 update for desktop NIAGARAHOMEIMPROVEMENT project.
+- [ ] 20. Fix current 22 runtime UX/UI issues reported by Ultimate Scanner.

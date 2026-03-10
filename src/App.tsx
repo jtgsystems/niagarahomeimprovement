@@ -14,9 +14,11 @@ function HomePage() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Services />
-      <Pricing />
+      <main>
+        <Hero />
+        <Services />
+        <Pricing />
+      </main>
       <Footer />
       <ScrollToTop />
     </>
